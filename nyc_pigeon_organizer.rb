@@ -20,7 +20,6 @@ data[:color].each_with_object(Hash.new {|h,k| h[k] = {color:[]}}) do |(color,bir
       end
     end
   end
-end
 
 cage
 
