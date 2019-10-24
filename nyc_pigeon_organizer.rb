@@ -4,7 +4,7 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   # write your code here!
 
-pigeon_data[:color].each_with_object(Hash.new {|h,k| h[k] = {color:[]}}) do |(color,birds),cage| 
+data[:color].each_with_object(Hash.new {|h,k| h[k] = {color:[]}}) do |(color,birds),cage| 
   birds.each do |bird| 
     cage[bird][:color] << color.to_s 
   end 
