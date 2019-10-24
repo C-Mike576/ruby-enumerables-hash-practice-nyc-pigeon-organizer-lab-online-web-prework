@@ -12,6 +12,7 @@ cage_two.merge(find_gender(data))
 
 cage_three.merge(find_lives(data))
 cage_one.merge(cage_two)
+binding.pry
 end
 
 
