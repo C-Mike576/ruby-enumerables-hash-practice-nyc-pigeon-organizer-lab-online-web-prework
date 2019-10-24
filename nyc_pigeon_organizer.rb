@@ -4,40 +4,32 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   # write your code here!
 cage = {}
+cage.merge(find_color(data))
+end
 
 
 def find_color(data)
-data[:color].each_with_object(Hash.new {|h,k| h[k] = {color:[]}}) do |(color,birds),cage| 
-  birds.each do |bird| 
-    cage[bird][:color] << color.to_s 
+  data[:color].each_with_object(Hash.new {|h,k| h[k] = {color:[]}}) do |(color,birds),cage| 
+    birds.each do |bird| 
+      cage[bird][:color] << color.to_s 
+    end
   end
 end
-
       
-      
-      data[:gender].each_with_object(Hash.new {|h,k| h[k] = {gender:[]}}) do |(gender,birds),cage| 
-        birds.each do |bird| 
-          cage[bird][:gender] << gender.to_s 
-            
-            
-            data[:lives].each_with_object(Hash.new {|h,k| h[k] = {lives:[]}}) do |(lives,birds),cage| 
-              birds.each do |bird| 
-                cage[bird][:lives] << lives.to_s
-
-cage
-
-
-
-
-
-
-
-
-
-
-
-
-
+def find_gender(data)      
+ data[:gender].each_with_object(Hash.new {|h,k| h[k] = {gender:[]}}) do |(gender,birds),cage| 
+   birds.each do |bird| 
+    cage[bird][:gender] << gender.to_s 
+   end
+  end
+end
+def find_lives(data)            
+  data[:lives].each_with_object(Hash.new {|h,k| h[k] = {lives:[]}}) do |(lives,birds),cage| 
+    birds.each do |bird| 
+      cage[bird][:lives] << lives.to_s
+    end
+  end
+end
 
 
 =begin
@@ -72,4 +64,3 @@ cage
     new_sort_2
   end
 =end
-end
