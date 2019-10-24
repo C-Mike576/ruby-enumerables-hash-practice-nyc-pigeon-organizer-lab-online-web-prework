@@ -3,13 +3,10 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   # write your code here!
-cage = {}
-cage_one = {}
-cage_two = {}
-cage_three = {}
-cage_one.merge(find_color(data))
-cage_two.merge(find_gender(data))
-cage_three.merge(find_lives(data))
+cage = find_color(data)
+binding.pry
+find_gender(data)
+find_lives(data)
 cage.merge(cage_one)
 binding.pry
 end
