@@ -7,19 +7,18 @@ cage = {}
 data[:color].each_with_object(Hash.new {|h,k| h[k] = {color:[]}}) do |(color,birds),cage| 
   birds.each do |bird| 
     cage[bird][:color] << color.to_s 
-  end 
-end
-
-
-data[:gender].each_with_object(Hash.new {|h,k| h[k] = {gender:[]}}) do |(gender,birds),cage| 
-  birds.each do |bird| 
-    cage[bird][:gender] << gender.to_s 
-  end
-end
-
-data[:lives].each_with_object(Hash.new {|h,k| h[k] = {lives:[]}}) do |(lives,birds),cage| 
-  birds.each do |bird| 
-    cage[bird][:lives] << lives.to_s
+      data[:gender].each_with_object(Hash.new {|h,k| h[k] = {gender:[]}}) do |(gender,birds),cage| 
+        birds.each do |bird| 
+          cage[bird][:gender] << gender.to_s 
+            data[:lives].each_with_object(Hash.new {|h,k| h[k] = {lives:[]}}) do |(lives,birds),cage| 
+              birds.each do |bird| 
+                cage[bird][:lives] << lives.to_s
+              end
+            end
+          end
+        end
+      end
+    end
   end
 end
 
