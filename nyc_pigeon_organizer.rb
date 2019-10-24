@@ -16,5 +16,5 @@ data.each do |atrabu, set|
     end
   end
 end
-cage
+pp cage
 end
