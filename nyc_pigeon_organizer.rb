@@ -5,8 +5,11 @@ def nyc_pigeon_organizer(data)
   # write your code here!
 cage = {}
 cage.merge!(find_color(data))
+binding.pry
 cage.merge!(find_gender(data))
+binding.pry
 cage.merge!(find_lives(data))
+binding.pry
 end
 
 
