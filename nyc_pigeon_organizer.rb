@@ -3,6 +3,33 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   # write your code here!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=begin
   new_sort_1 = {}
   #binding.pry
   data.each_value do |n|
@@ -33,3 +60,5 @@ def nyc_pigeon_organizer(data)
     binding.pry
     new_sort_2
   end
+=end
+end
