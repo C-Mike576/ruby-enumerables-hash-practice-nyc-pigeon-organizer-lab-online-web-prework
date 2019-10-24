@@ -14,12 +14,7 @@ data[:color].each_with_object(Hash.new {|h,k| h[k] = {color:[]}}) do |(color,bir
               birds.each do |bird| 
                 cage[bird][:lives] << lives.to_s
               end
-            end
           end
-        end
-      end
-    end
-  end
 
 cage
 
