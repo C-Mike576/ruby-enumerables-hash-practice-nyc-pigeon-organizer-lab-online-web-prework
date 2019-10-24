@@ -4,9 +4,9 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   # write your code here!
 cage = {}
-cage.merge(find_color(data))
-cage.merge(find_gender(data))
-cage.merge(find_lives(data))
+cage.merge!(find_color(data))
+cage.merge!(find_gender(data))
+cage.merge!(find_lives(data))
 end
 
 
