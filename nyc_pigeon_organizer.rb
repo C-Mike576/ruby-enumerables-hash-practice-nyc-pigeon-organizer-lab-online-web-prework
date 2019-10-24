@@ -17,10 +17,11 @@ data[:gender].each_with_object(Hash.new {|h,k| h[k] = {gender:[]}}) do |(gender,
   end
 end
 
-data[:gender].each_with_object(Hash.new {|h,k| h[k] = {gender:[]}}) do |(gender,birds),cage| 
+data[:lives].each_with_object(Hash.new {|h,k| h[k] = {lives:[]}}) do |(lives,birds),cage| 
   birds.each do |bird| 
-    cage[bird][:gender] << gender.to_s
-
+    cage[bird][:lives] << lives.to_s
+  end
+end
 
 
 
